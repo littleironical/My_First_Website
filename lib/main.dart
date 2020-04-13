@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(left: 30.0, right: 30.0, top: 50.0),
+              padding: const EdgeInsets.only(left: 30.0, right: 30.0, top: 40.0),
               child: Container( 
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -40,9 +40,35 @@ class MyApp extends StatelessWidget {
                 ),
                 alignment: Alignment.bottomCenter,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        Image.network('https://static.vecteezy.com/system/resources/thumbnails/000/413/212/small/1156.jpg',
+                          height: 70.0,
+                          width: 150.0,
+                        ),
+                        SizedBox(width: 50.0),
+                        Row(
+                          children: <Widget>[
+                            Text('Hello World',
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(width: 15.0),
+                            CircleAvatar(
+                              backgroundImage: NetworkImage('https://cdn.dribbble.com/users/2498377/screenshots/6614953/dar_illus_2x.jpg'),
+                              maxRadius: 25.0,
+                            )
+                          ], 
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Center(
                           child: Stack(
@@ -115,21 +141,21 @@ class MyApp extends StatelessWidget {
               ),
             ),
           ),
-          floatingActionButton: FloatingActionButton.extended(
-            onPressed: null,
-            label: Text('   THIS WEBSITE ISN\'T STABLE  ',
-              style: TextStyle(
-                color: Colors.red,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(
-                Radius.circular(30.0),
-              )
-            ),
-          ),
-          floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+          // floatingActionButton: FloatingActionButton.extended(
+          //   onPressed: null,
+          //   label: Text('   THIS WEBSITE ISN\'T STABLE  ',
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontWeight: FontWeight.bold,
+          //     ),
+          //   ),
+          //   shape: RoundedRectangleBorder(
+          //     borderRadius: BorderRadius.all(
+          //       Radius.circular(30.0),
+          //     )
+          //   ),
+          // ),
+          // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         ),
     );
   }
