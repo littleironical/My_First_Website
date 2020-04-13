@@ -17,27 +17,29 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Container(
             decoration: BoxDecoration(
-              // gradient: LinearGradient(
-              //   begin: Alignment.topLeft,
-              //   end: Alignment.bottomRight,
-              //   stops: [0.5, 1],
-              //   colors: [Colors.orange, Colors.yellow],
-              // ),
-              image: AssetImage(assetName)
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                stops: [0.5, 1],
+                colors: [Colors.orange, Colors.yellow],
+              ),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(30.0),
+              padding: const EdgeInsets.only(left: 30.0, right: 30.0, top: 50.0),
               child: Container( 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(40.0)),
-                  border: Border.all(
-                    color: Color(0xFF494D55),
-                    width: 10.0,
-                    style: BorderStyle.solid,
-                  ),
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0), topRight: Radius.circular(20.0)),
+                  // border: Border.all(
+                  //   color: Color(0xFF494D55),
+                  //   width: 10.0,
+                  //   style: BorderStyle.solid,
+                  // ),
                 ),
-                alignment: Alignment.center,
+                alignment: Alignment.bottomCenter,
+                child: Column(
+                  
+                ),
               ),
             ),
           ),
