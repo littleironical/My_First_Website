@@ -45,17 +45,23 @@ class MyApp extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-                        Image.network('https://static.vecteezy.com/system/resources/thumbnails/000/413/212/small/1156.jpg',
-                          height: 70.0,
-                          width: 150.0,
+                        Text('Website Portfolio',
+                          style: TextStyle(
+                            fontSize: 40.0,
+                            fontFamily: 'Lobster',
+                          ),
                         ),
+                        // Image.network('https://static.vecteezy.com/system/resources/thumbnails/000/413/212/small/1156.jpg',
+                        //   height: 70.0,
+                        //   width: 150.0,
+                        // ),
                         SizedBox(width: 50.0),
                         Row(
                           children: <Widget>[
                             Text('Hello World',
                               style: TextStyle(
                                 fontSize: 20.0,
-                                fontFamily: 'Lobster',
+                                fontFamily: 'ComicNeue',
                               ),
                             ),
                             SizedBox(width: 15.0),
@@ -87,7 +93,7 @@ class MyApp extends StatelessWidget {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.only(top: 50.0),
+                                padding: EdgeInsets.only(top: 55.0),
                                 child: Column(
                                   children: <Widget>[
                                     Text(' I\'m Hardik Kumar ',
