@@ -88,7 +88,7 @@ class MyApp extends StatelessWidget {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.only(top: 35.0),
+                                  padding: EdgeInsets.only(top: 45.0),
                                   child: Text('I\'m Hardik Kumar',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
@@ -102,7 +102,7 @@ class MyApp extends StatelessWidget {
                               ),
                               Positioned(
                                 left: -42.0,
-                                top: -70.0,
+                                top: -60.0,
                                 child: Container(
                                   decoration: BoxDecoration(
                                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -125,15 +125,15 @@ class MyApp extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Center(
-                          child: Text('Hi i am hardik kumar\n\nAn Undergraduate,\n(Computer Science and Engineering) student,\nat Vellore Institute of Technology, Bhopal.\nNow-a-days working on\nAndroid and iOS app Development\nas well as Web Development.',
+                        Text(' Hi i am hardik kumar\n\n An Undergraduate,\n(Computer Science and Engineering) student,\n at Vellore Institute of Technology, Bhopal.\n Now-a-days working on\n Android and iOS app Development\n as well as Web Development.',
+                            textAlign: TextAlign.end,
                             style: TextStyle(
                               color: Colors.black,
                               fontFamily: 'Billabong',
                               fontSize: 40.0,
                             ),
                           ),
-                        ),
+                        
                       ],
                     ),
                   ],
