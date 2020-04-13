@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
                             Text('Hello World',
                               style: TextStyle(
                                 fontSize: 20.0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w600,
                               ),
                             ),
                             SizedBox(width: 15.0),
@@ -89,14 +89,19 @@ class MyApp extends StatelessWidget {
                                 ),
                                 child: Padding(
                                   padding: EdgeInsets.only(top: 45.0),
-                                  child: Text('I\'m Hardik Kumar',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 48.0,
-                                      fontWeight: FontWeight.w300,
-                                      fontFamily: 'Billabong'
-                                    )
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text('I\'m Hardik Kumar',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 48.0,
+                                          fontWeight: FontWeight.w300,
+                                          fontFamily: 'Billabong'
+                                        )
+                                      ),
+                                      // Text(),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -125,7 +130,7 @@ class MyApp extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Text(' Hi i am hardik kumar\n\n An Undergraduate,\n(Computer Science and Engineering) student,\n at Vellore Institute of Technology, Bhopal.\n Now-a-days working on\n Android and iOS app Development\n as well as Web Development.',
+                        Text(' Hiii, I am hardik kumar\n\n An Undergraduate,\n(Computer Science and Engineering) student,\n at Vellore Institute of Technology, Bhopal.\n Now-a-days working on\n Android and iOS app Development\n as well as Web Development.',
                             textAlign: TextAlign.end,
                             style: TextStyle(
                               color: Colors.black,
