@@ -1,3 +1,6 @@
+import 'dart:html';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -37,8 +40,30 @@ class MyApp extends StatelessWidget {
                   // ),
                 ),
                 alignment: Alignment.bottomCenter,
-                child: Column(
-                  
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Center(
+                        child: Stack(
+                          overflow: Overflow.visible,
+                          children: <Widget>[
+                            Positioned(
+                              child: Container(
+                                color: Colors.black,
+                                child: Text('WELCOME',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 40.0,
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
