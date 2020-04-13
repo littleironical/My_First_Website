@@ -17,12 +17,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Container(
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                stops: [0.5, 1],
-                colors: [Colors.orange, Colors.yellow],
-              ),
+              // gradient: LinearGradient(
+              //   begin: Alignment.topLeft,
+              //   end: Alignment.bottomRight,
+              //   stops: [0.5, 1],
+              //   colors: [Colors.orange, Colors.yellow],
+              // ),
+              image: AssetImage(assetName)
             ),
             child: Padding(
               padding: const EdgeInsets.all(30.0),
