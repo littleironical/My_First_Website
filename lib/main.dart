@@ -111,6 +111,21 @@ class MyApp extends StatelessWidget {
               ),
             ),
           ),
+          floatingActionButton: FloatingActionButton.extended(
+            onPressed: null,
+            label: Text('   THIS WEBSITE ISN\'T STABLE  ',
+              style: TextStyle(
+                color: Colors.red,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(
+                Radius.circular(30.0),
+              )
+            ),
+          ),
+          floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         ),
     );
   }
