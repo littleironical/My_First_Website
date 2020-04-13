@@ -98,7 +98,7 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Center(
-                      child: Text('Hi i am hardik kumar\n',
+                      child: Text('Hi i am hardik kumar\n\nAn Undergraduate,\n(Computer Science and Engineering) student,\nat Vellore Institute of Technology, Bhopal.\nNow-a-days working on\nAndroid and iOS app Development\nas well as Web Development.',
                         style: TextStyle(
                           color: Colors.black,
                           fontFamily: 'Billabong',
