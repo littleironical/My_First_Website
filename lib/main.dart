@@ -19,13 +19,21 @@ class MyApp extends StatelessWidget {
           padding: EdgeInsets.all(20.0),
           child: Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(30.0)),
-              border: Border.all(
-                color: Colors.blue,
-                width: 10.0,
-                style: BorderStyle.solid,
-              ),
+              gradient: LinearGradient(
+                colors: [Colors.yellow, Colors.orange]
+              )
             ),
+            // child: Container(
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.all(Radius.circular(30.0)),
+            //     border: Border.all(
+            //       color: Color(0xFF494D55),
+            //       width: 10.0,
+            //       style: BorderStyle.solid,
+            //     ),
+            //   ),
+            //   alignment: Alignment.center,
+            // ),
           ),
         ),
       ),
