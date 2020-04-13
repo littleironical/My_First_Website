@@ -71,12 +71,12 @@ class MyApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Stack(
-                          alignment: Alignment.center,
+                          // alignment: Alignment.center,
                           overflow: Overflow.visible,
                           children: <Widget>[
-                              Container(
+                            Container(
                               height: 350.0,
-                              width: 320.0,
+                              width: 400.0,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
                                 gradient: LinearGradient(
@@ -87,10 +87,10 @@ class MyApp extends StatelessWidget {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.only(top: 45.0),
+                                padding: EdgeInsets.only(top: 50.0),
                                 child: Column(
                                   children: <Widget>[
-                                    Text('I\'m Hardik Kumar',
+                                    Text(' I\'m Hardik Kumar ',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.black,
@@ -100,12 +100,23 @@ class MyApp extends StatelessWidget {
                                       )
                                     ),
                                     SizedBox(height: 15.0),
-                                    Text('abc',
+                                    Text('- Contact Me -',
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 28.0,
+                                        fontFamily: 'ComicNeue',
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(height: 18.0),
+                                    Text('LinkedIn: Hardik Kumar\nGitHub: Hardikkr\nGmail:\n hardik.kumar18feb@gmail.com',
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
                                         color: Colors.black,
-                                        fontSize: 38.0,
+                                        fontSize: 25.0,
                                         fontFamily: 'ComicNeue',
+                                        fontWeight: FontWeight.normal,
                                       ),
                                     ),
                                   ],

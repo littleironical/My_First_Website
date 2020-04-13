@@ -72,6 +72,9 @@ flutter:
         - asset: fonts/ComicNeue-Light.ttf
         - asset: fonts/ComicNeue-LightItalic.ttf
         - asset: fonts/ComicNeue-Regular.ttf
+    - family: Lobster
+      fonts:
+        - asset: fonts/Lobster-Regular.ttf    
 
   #
   # For details regarding fonts from package dependencies,
