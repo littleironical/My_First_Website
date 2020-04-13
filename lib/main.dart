@@ -15,12 +15,12 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.white
       ),
       home: Scaffold(
-        body: Padding(
-          padding: EdgeInsets.all(20.0),
-          child: Container(
+        body: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.yellow, Colors.orange]
+                colors: [Colors.orange, Colors.yellow, Colors.orange],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               )
             ),
             // child: Container(
@@ -36,7 +36,6 @@ class MyApp extends StatelessWidget {
             // ),
           ),
         ),
-      ),
     );
   }
 }
