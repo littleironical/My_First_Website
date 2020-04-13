@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
                             Text('Hello World',
                               style: TextStyle(
                                 fontSize: 20.0,
-                                fontWeight: FontWeight.w600,
+                                fontFamily: 'ComicNeue',
                               ),
                             ),
                             SizedBox(width: 15.0),
@@ -70,75 +70,80 @@ class MyApp extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Center(
-                          child: Stack(
-                            alignment: Alignment.center,
-                            overflow: Overflow.visible,
-                            children: <Widget>[
-                                Container(
-                                height: 350.0,
-                                width: 320.0,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                                  gradient: LinearGradient(
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                    stops: [0.5, 1],
-                                    colors: [Colors.orange, Colors.yellow],
-                                  ),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsets.only(top: 45.0),
-                                  child: Column(
-                                    children: <Widget>[
-                                      Text('I\'m Hardik Kumar',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 48.0,
-                                          fontWeight: FontWeight.w300,
-                                          fontFamily: 'Billabong'
-                                        )
-                                      ),
-                                      // Text(),
-                                    ],
-                                  ),
+                        Stack(
+                          alignment: Alignment.center,
+                          overflow: Overflow.visible,
+                          children: <Widget>[
+                              Container(
+                              height: 350.0,
+                              width: 320.0,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                                gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  stops: [0.5, 1],
+                                  colors: [Colors.orange, Colors.yellow],
                                 ),
                               ),
-                              Positioned(
-                                left: -42.0,
-                                top: -60.0,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                     borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                                     color: Colors.black,
-                                  ),
-                                  height: 100.0,
-                                  width: 300.0,
-                                  child: Center(
-                                    child: Text('WELCOME',
-                                    textAlign: TextAlign.center,
+                              child: Padding(
+                                padding: EdgeInsets.only(top: 45.0),
+                                child: Column(
+                                  children: <Widget>[
+                                    Text('I\'m Hardik Kumar',
+                                      textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 52.0,
-                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black,
+                                        fontSize: 48.0,
+                                        fontWeight: FontWeight.w300,
+                                        fontFamily: 'Billabong'
+                                      )
+                                    ),
+                                    SizedBox(height: 15.0),
+                                    Text('abc',
+                                      textAlign: TextAlign.start,
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 38.0,
+                                        fontFamily: 'ComicNeue',
                                       ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: -42.0,
+                              top: -60.0,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                   borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                                   color: Colors.black,
+                                ),
+                                height: 100.0,
+                                width: 300.0,
+                                child: Center(
+                                  child: Text('WELCOME',
+                                  textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 52.0,
+                                      fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                         Text(' Hiii, I am hardik kumar\n\n An Undergraduate,\n(Computer Science and Engineering) student,\n at Vellore Institute of Technology, Bhopal.\n Now-a-days working on\n Android and iOS app Development\n as well as Web Development.',
-                            textAlign: TextAlign.end,
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontFamily: 'Billabong',
-                              fontSize: 40.0,
-                            ),
+                          textAlign: TextAlign.end,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: 'Billabong',
+                            fontSize: 40.0,
                           ),
-                        
+                        ),
                       ],
                     ),
                   ],

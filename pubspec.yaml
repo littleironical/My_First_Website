@@ -64,17 +64,15 @@ flutter:
     - family: Billabong
       fonts:
         - asset: fonts/Billabong.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-    - family: CosmicNeue
+    - family: ComicNeue
       fonts:
-        - asset: fonts/CosmicNeue-Regular.ttf
-        - asset: fonts/CosmicNeue-Bold.ttf
-        - asset: fonts/CosmicNeue-BoldItalic.ttf
-        - asset: fonts/CosmicNeue-Italic.ttf
-        - asset: fonts/CosmicNeue-Light.ttf
-        - asset: fonts/CosmicNeue-LightItalic.ttf
-  #         weight: 700
+        - asset: fonts/ComicNeue-Bold.ttf
+        - asset: fonts/ComicNeue-BoldItalic.ttf
+        - asset: fonts/ComicNeue-Italic.ttf
+        - asset: fonts/ComicNeue-Light.ttf
+        - asset: fonts/ComicNeue-LightItalic.ttf
+        - asset: fonts/ComicNeue-Regular.ttf
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
