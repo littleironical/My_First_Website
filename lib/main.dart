@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -40,30 +39,74 @@ class MyApp extends StatelessWidget {
                   // ),
                 ),
                 alignment: Alignment.bottomCenter,
-                child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Center(
-                        child: Stack(
-                          overflow: Overflow.visible,
-                          children: <Widget>[
-                            Positioned(
-                              child: Container(
-                                color: Colors.black,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    Center(
+                      child: Stack(
+                        alignment: Alignment.center,
+                        overflow: Overflow.visible,
+                        children: <Widget>[
+                          Container(
+                            height: 350.0,
+                            width: 320.0,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              gradient: LinearGradient(
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
+                                stops: [0.5, 1],
+                                colors: [Colors.orange, Colors.yellow],
+                              ),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.only(top: 35.0),
+                              child: Text('I\'m Hardik Kumar',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 48.0,
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: 'Billabong'
+                                )
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: -42.0,
+                            top: -70.0,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                                 color: Colors.black,
+                              ),
+                              height: 100.0,
+                              width: 300.0,
+                              child: Center(
                                 child: Text('WELCOME',
+                                textAlign: TextAlign.center,
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 40.0,
+                                    fontSize: 52.0,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
-                            )
-                          ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Center(
+                      child: Text('Hi i am hardik kumar\n',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Billabong',
+                          fontSize: 40.0,
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
