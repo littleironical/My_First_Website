@@ -24,18 +24,20 @@ class MyApp extends StatelessWidget {
                 colors: [Colors.orange, Colors.yellow],
               ),
             ),
-            child: Container(
-              padding: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(40.0)),
-                border: Border.all(
-                  color: Color(0xFF494D55),
-                  width: 10.0,
-                  style: BorderStyle.solid,
+            child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Container( 
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(40.0)),
+                  border: Border.all(
+                    color: Color(0xFF494D55),
+                    width: 10.0,
+                    style: BorderStyle.solid,
+                  ),
                 ),
+                alignment: Alignment.center,
               ),
-              alignment: Alignment.center,
             ),
           ),
         ),
