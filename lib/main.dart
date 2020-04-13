@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
                             Text('Hello World',
                               style: TextStyle(
                                 fontSize: 20.0,
-                                fontFamily: 'ComicNeue',
+                                fontFamily: 'Lobster',
                               ),
                             ),
                             SizedBox(width: 15.0),
