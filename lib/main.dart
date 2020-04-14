@@ -96,7 +96,7 @@ class MyApp extends StatelessWidget {
                                 padding: EdgeInsets.only(top: 55.0),
                                 child: Column(
                                   children: <Widget>[
-                                    Text(' I\'m Hardik Kumar ',
+                                    Text('How are you doing?',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.black,
@@ -117,7 +117,7 @@ class MyApp extends StatelessWidget {
                                     ),
                                     SizedBox(height: 18.0),
                                     Text('LinkedIn: Hardik Kumar\nGitHub: Hardikkr\nGmail:\n hardik.kumar18feb@gmail.com',
-                                      textAlign: TextAlign.start,
+                                      textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 25.0,
@@ -153,14 +153,29 @@ class MyApp extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Text(' Hiii, I am hardik kumar\n\n An Undergraduate,\n(Computer Science and Engineering) student,\n at Vellore Institute of Technology, Bhopal.\n Now-a-days working on\n Android and iOS app Development\n as well as Web Development.',
-                          textAlign: TextAlign.end,
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: 'Billabong',
-                            fontSize: 40.0,
-                          ),
-                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: <Widget>[
+                            Text('Hiii, I am hardik kumar',
+                              textAlign: TextAlign.end,
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: 'Billabong',
+                                fontSize: 52.0,
+                              ),
+                            ),
+                            SizedBox(height: 30.0),
+                            Text('An Undergraduate,\n(Computer Science and Engineering) student,\n at Vellore Institute of Technology, Bhopal.\n Now-a-days working on\n Android and iOS app Development\n as well as Web Development.',
+                              textAlign: TextAlign.end,
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontFamily: 'Billabong',
+                                fontSize: 40.0,
+                              ),
+                            ),
+                          ],
+                        )
                       ],
                     ),
                   ],
