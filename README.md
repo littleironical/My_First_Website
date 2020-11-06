@@ -1,7 +1,7 @@
-# _My_First_Website_
+# My first Website using Flutter
 
-## I tried to make a normal portfolio website using Flutter web. It's not very stable now because flutter web is in it's initial stage.
+This is my first step towards flutter web, so this is just a UI.
 
-# Project Images
+# Project Image
 
 <img src = "ss1.jpg">
